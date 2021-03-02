@@ -1,0 +1,7 @@
+.netrwhist
+
+# Ignore plugins
+plugged
+autoload/plug.vim*
+
+extra.vim

@@ -1,0 +1,2 @@
+colorscheme lucius 
+set cursorline
