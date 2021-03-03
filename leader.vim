@@ -25,3 +25,4 @@ map <Leader>F :Filetypes<CR>
 
 map <Leader><ESC> :source %<CR>
 map <Leader>e :call EditBlock()<CR>
+map <Leader>j :call JsBeautify()<CR>

@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" js plugins
+Plug 'maksimr/vim-jsbeautify'
+
 " Git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'

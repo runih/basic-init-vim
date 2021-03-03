@@ -12,6 +12,7 @@ set fileencodings=utf-8,iso8859-1
 
 syntax on
 
+set noshowmode
 set relativenumber
 set number
 set history=700
