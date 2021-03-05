@@ -1,5 +1,21 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" base64 plugin
+" Bindings: 
+"   <leader>atob to convert a string to base64 string.
+"   <leader>btoa to convert a base64 string to original string.
+
+Plug 'equal-l2/vim-base64'
+
+" sneak plugin
+Plug 'justinmk/vim-sneak'
+
+" which-key plugin
+Plug 'liuchengxu/vim-which-key'
+
+" NERDTree
+Plug 'preservim/nerdtree'
+
 " js plugins
 Plug 'maksimr/vim-jsbeautify'
 

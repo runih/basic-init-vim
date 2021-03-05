@@ -1,6 +1,9 @@
 " vim sessions
 let g:session_autosave = 'no'
 
+" Sneak settings
+let g:sneak#label = 1
+
 " Markdown
 "let g:vim_markdown_folding_disabled = 0
 let g:vim_markdown_folding_style_pythonic = 1

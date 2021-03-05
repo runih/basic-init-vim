@@ -2,6 +2,12 @@
 nnoremap <SPACE> <Nop>
 map <SPACE> <Leader>
 
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+set timeoutlen=500
+
+
 map <Leader>f :Files<CR>
 map <Leader>g :GFiles<CR>
 map <Leader>s :GFiles?<CR>
@@ -26,3 +32,5 @@ map <Leader>F :Filetypes<CR>
 map <Leader><ESC> :source %<CR>
 map <Leader>e :call EditBlock()<CR>
 map <Leader>j :call JsBeautify()<CR>
+map <Leader>E :NERDTree<CR>
+map <Leader>i :IndentLinesToggle<CR>

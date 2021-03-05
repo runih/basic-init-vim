@@ -5,6 +5,10 @@ if filereadable(expand('~/.config/nvim/extra.vim'))
 	execute 'source $HOME/.config/nvim/extra.vim'
 endif
 
+"colorscheme OceanicNext
+colorscheme sonokai
+"colorscheme onehalfdark
+
 set fileencoding=utf-8
 set encoding=utf-8
 set termencoding=utf-8
