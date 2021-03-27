@@ -7,6 +7,7 @@ let g:mapleader = "\<Space>"
 let g:maplocalleader = ','
 set timeoutlen=500
 
+map <Leader>hl :set hlsearch!<CR>
 
 map <Leader>f :Files<CR>
 map <Leader>g :GFiles<CR>
@@ -28,6 +29,12 @@ map <Leader>B :BCommits<CR>
 map <Leader>M :Maps<CR>
 map <Leader>H :Helptags<CR>
 map <Leader>F :Filetypes<CR>
+
+" Git
+map <Leader>gs :Gstatus<CR>
+map <Leader>gd :Gdiff<CR>
+
+map <Leader>d :windo diffthis<CR>
 
 map <Leader><ESC> :source %<CR>
 map <Leader>e :call EditBlock()<CR>
