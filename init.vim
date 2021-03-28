@@ -40,8 +40,6 @@ highlight SpecialKey guifg=#4a4a59
 
 tnoremap <C-W><C-N> <C-\><C-N>
 
-set shell=/opt/local/bin/fish
-
 set backup
 if !isdirectory($HOME . '/.config/nvim/backup')
 	call mkdir($HOME . '/.config/nvim/backup', 'p')
