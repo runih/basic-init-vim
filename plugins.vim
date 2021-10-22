@@ -8,7 +8,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'equal-l2/vim-base64'
 
 " sneak plugin
-Plug 'justinmk/vim-sneak'
+"Plug 'justinmk/vim-sneak'
 
 " which-key plugin
 Plug 'liuchengxu/vim-which-key'
@@ -24,6 +24,18 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/gv.vim'
+
+" Golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+
+" Vue
+Plug 'posva/vim-vue'
+
+Plug 'nicwest/vim-http'
+
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh', }
+
 
 " Markdown
 Plug 'godlygeek/tabular'
@@ -58,19 +70,18 @@ Plug 'chankaward/vim-railscasts-theme'
 Plug 'mhartington/oceanic-next'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'rainglow/vim'
-Plug 'nightsense/vimspectr'
 Plug 'chriskempson/base16-vim'
 Plug 'mswift42/vim-themes'
 Plug 'mkarmona/colorsbox'
 Plug 'xolox/vim-colorscheme-switcher'
 
-Plug 'forevernull/vim-json-format'
 
 " Css coloring
 Plug 'ap/vim-css-color'
 
 " Json
 Plug 'elzr/vim-json'
+Plug 'forevernull/vim-json-format'
 
 call plug#end()
 

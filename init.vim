@@ -4,6 +4,9 @@ execute 'source $HOME/.config/nvim/leader.vim'
 if filereadable(expand('~/.config/nvim/extra.vim'))
 	execute 'source $HOME/.config/nvim/extra.vim'
 endif
+if filereadable(expand('~/.config/nvim/coc.vim'))
+	execute 'source $HOME/.config/nvim/coc.vim'
+endif
 
 "colorscheme OceanicNext
 colorscheme sonokai
@@ -34,6 +37,7 @@ set ts=4 sts=4 sw=4 noexpandtab
 set laststatus=2
 set showtabline=0
 set ruler
+set mouse=a
 
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
