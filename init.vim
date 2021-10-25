@@ -50,8 +50,8 @@ if !isdirectory($HOME . '/.config/nvim/backup')
 endif
 set backupdir=$HOME/.config/nvim/backup
 
-if !isdirectory('/tmp/nvim')
-	call mkdir('/tmp/nvim', 'p')
-	silent !chmod go-rwx /tmp/nvim
+if !isdirectory($HOME . '/tmp/nvim')
+	call mkdir($HOME . '/tmp/nvim', 'p')
+	silent !chmod go-rwx $HOME/tmp/nvim
 endif
-set dir=/tmp/nvim
+set dir=$HOME/tmp/nvim
