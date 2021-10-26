@@ -40,6 +40,10 @@ Plug 'nicwest/vim-http'
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh', }
 
+Plug 'neovim/nvim-lspconfig'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'williamboman/nvim-lsp-installer'
+
 
 " Markdown
 Plug 'godlygeek/tabular'
@@ -64,6 +68,9 @@ Plug 'xolox/vim-session'
 "Plug 'ctrlpvim/ctrlp.vim' ", { 'tag': '1.79' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 
 " airline
 Plug 'vim-airline/vim-airline'
