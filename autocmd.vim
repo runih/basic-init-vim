@@ -31,4 +31,22 @@ if has("autocmd")
 
   " Treat .fish files as fish files
   autocmd BufNewFile,BufRead *.fish set filetype=fish
+
+  autocmd!
+  autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>a :OmniSharpGetCodeActions<CR>
+  autocmd FileType cs xnoremap <buffer> <Leader>a :call OmniSharp#GetCodeActions('visual')<CR>
+  autocmd FileType cs nnoremap <buffer> <F2> :OmniSharpRename<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>cf :OmniSharpCodeFormat<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsage<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>dc :OmniSharpDocumentation<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>cc :OmniSharpGlobalCodeCheck<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>rt :OmniSharpRunTest<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>rT :OmniSharpRunTestInFile<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>ss :OmniSharpStartServer<CR>
+  autocmd FileType cs nnoremap <buffer> <Leader>sp :OmniSharpStopServer<CR>
+  autocmd FileType cs nnoremap <buffer> <C-\> :OmniSharpSignatureHelp<CR>
+  autocmd FileType cs inoremap <buffer> <C-\> <C-o>:OmniSharpSignatureHelp<CR>
 endif

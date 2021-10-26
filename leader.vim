@@ -47,6 +47,7 @@ map <Leader>i :IndentLinesToggle<CR>
 map <Leader>init :tabedit ~/.config/nvim/init.vim<CR>
 map <Leader>so :source ~/.config/nvim/init.vim<CR>
 map <Leader>sl :source ~/.config/nvim/leader.vim<CR>
+map <Leader>cd :cd %:h<CR>
 
 " vim-http
 map <Leader>ht :Http<CR>

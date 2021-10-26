@@ -29,6 +29,10 @@ Plug 'junegunn/gv.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
+" C#
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
+
 " Vue
 Plug 'posva/vim-vue'
 
@@ -48,7 +52,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'stephpy/vim-yaml'
 
 " IndentLine plugin
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 
 " Importanted plugins
 Plug 'tpope/vim-surround'
@@ -82,6 +86,13 @@ Plug 'ap/vim-css-color'
 " Json
 Plug 'elzr/vim-json'
 Plug 'forevernull/vim-json-format'
+
+if has("nvim")
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'glepnir/lspsaga.nvim'
+endif
+
+Plug 'nvim-lua/completion-nvim'
 
 call plug#end()
 
