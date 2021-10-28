@@ -36,6 +36,9 @@ map <Leader>n :set list!<CR>
 map <Leader>gs :Git<CR>
 map <Leader>gd :Gdiff<CR>
 
+" setup mapping to call :LazyGit
+nnoremap <silent> <leader>gg :LazyGit<CR>
+
 map <Leader>d :windo diffthis<CR>
 
 map <Leader><ESC> :source %<CR>
