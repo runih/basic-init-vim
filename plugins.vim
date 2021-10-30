@@ -41,9 +41,12 @@ Plug 'nicwest/vim-http'
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh', }
 
-Plug 'neovim/nvim-lspconfig'
-Plug 'glepnir/lspsaga.nvim'
-Plug 'williamboman/nvim-lsp-installer'
+if has("nvim")
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'glepnir/lspsaga.nvim'
+	Plug 'williamboman/nvim-lsp-installer'
+endif
+
 
 
 " Markdown
@@ -94,11 +97,6 @@ Plug 'ap/vim-css-color'
 " Json
 Plug 'elzr/vim-json'
 Plug 'forevernull/vim-json-format'
-
-if has("nvim")
-	Plug 'neovim/nvim-lspconfig'
-	Plug 'glepnir/lspsaga.nvim'
-endif
 
 Plug 'nvim-lua/completion-nvim'
 
