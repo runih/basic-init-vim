@@ -20,3 +20,6 @@ highlight SpecialKey guifg=#4a4a59
 
 tnoremap <C-W><C-N> <C-\><C-N>
 
+lua << EOF
+require('gitsigns_setup')
+EOF

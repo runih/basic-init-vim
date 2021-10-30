@@ -21,10 +21,11 @@ Plug 'maksimr/vim-jsbeautify'
 
 " Git plugins
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
+"Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/gv.vim'
 Plug 'kdheepak/lazygit.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 " Golang
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -72,6 +73,9 @@ Plug 'xolox/vim-session'
 "Plug 'ctrlpvim/ctrlp.vim' ", { 'tag': '1.79' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Telecope
+Plug 'BurntSushi/ripgrep'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
