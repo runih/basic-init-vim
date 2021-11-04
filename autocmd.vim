@@ -49,4 +49,6 @@ if has("autocmd")
   autocmd FileType cs nnoremap <buffer> <Leader>sp :OmniSharpStopServer<CR>
   autocmd FileType cs nnoremap <buffer> <C-\> :OmniSharpSignatureHelp<CR>
   autocmd FileType cs inoremap <buffer> <C-\> <C-o>:OmniSharpSignatureHelp<CR>
+
+  autocmd BufRead .pgpass set filetype=pgpass
 endif
