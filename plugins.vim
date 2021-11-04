@@ -28,8 +28,10 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 
 " Golang
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+if has("nvim-0.5")
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+endif
 
 " C#
 Plug 'OmniSharp/omnisharp-vim'
@@ -42,7 +44,7 @@ Plug 'nicwest/vim-http'
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh', }
 
-if has("nvim")
+if has("nvim-0.5")
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'glepnir/lspsaga.nvim'
 	Plug 'williamboman/nvim-lsp-installer'
@@ -77,7 +79,9 @@ Plug 'junegunn/fzf.vim'
 " Telecope
 Plug 'BurntSushi/ripgrep'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+if has("nvim-0.5")
+  Plug 'nvim-telescope/telescope.nvim'
+endif
 
 
 " airline
@@ -96,7 +100,9 @@ Plug 'xolox/vim-colorscheme-switcher'
 
 
 " Css coloring
-Plug 'ap/vim-css-color'
+if has("nvim-0.5")
+  Plug 'ap/vim-css-color'
+endif
 
 " Json
 Plug 'elzr/vim-json'
