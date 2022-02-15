@@ -27,6 +27,9 @@ Plug 'junegunn/gv.vim'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 
+" Plug bicep
+Plug 'carlsmedstad/vim-bicep'
+
 " Golang
 if has("nvim-0.5")
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
