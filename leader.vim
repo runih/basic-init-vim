@@ -33,8 +33,9 @@ map <Leader>T :Filetypes<CR>
 map <Leader>n :set list!<CR>
 
 " Git
+map <Leader>gb :Git blame<CR>
+map <Leader>gl :Git log<CR>
 map <Leader>gs :Git<CR>
-map <Leader>gd :Gdiff<CR>
 
 " setup mapping to call :LazyGit
 nnoremap <silent> <leader>gg :LazyGit<CR>
